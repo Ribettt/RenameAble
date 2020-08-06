@@ -18,5 +18,14 @@
   "bugs": {
     "url": "https://github.com/Ribettt/RenameAble/issues"
   },
-  "homepage": "https://github.com/Ribettt/RenameAble#readme"
+  "homepage": "https://github.com/Ribettt/RenameAble#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
 }
