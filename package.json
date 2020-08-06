@@ -21,7 +21,8 @@
   "homepage": "https://github.com/Ribettt/RenameAble#readme",
   "dependencies": {
     "discord-akairo": "^8.0.0",
-    "discord.js": "^12.2.0"
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "eslint": "^7.6.0",
