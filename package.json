@@ -19,7 +19,10 @@
     "url": "https://github.com/Ribettt/RenameAble/issues"
   },
   "homepage": "https://github.com/Ribettt/RenameAble#readme",
-  "dependencies": {},
+  "dependencies": {
+    "discord-akairo": "^8.0.0",
+    "discord.js": "^12.2.0"
+  },
   "devDependencies": {
     "eslint": "^7.6.0",
     "eslint-config-standard": "^14.1.1",
