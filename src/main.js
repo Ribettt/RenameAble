@@ -4,7 +4,7 @@ const reClient = require('./structures/reClient');
 const client = new reClient({
     prefix: 'ai!',
     ownerID: ['271576733168173057', '369507341973979136'],
-    disableEveryone: true,
+    disableMentions: "everyone",
 });
 
 require('./events/ready')(client);
