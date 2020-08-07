@@ -5,6 +5,4 @@ const client = new reClient({
     disableMentions: "everyone",
 });
 
-require('./events/ready')(client);
-
-client.login(process.env.TOKEN);
+client._init();

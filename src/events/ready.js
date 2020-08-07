@@ -1,10 +1,14 @@
-module.exports = client => {
-    client.on('ready', () => {
-        client.user.setPresence({
-            activity: {
-                name: 'Discord-Aakairo JS',
-            },
+const { Listener } = require("discord-akairo");
+
+module.exports = class Ready extends Listener {
+    constructor() {
+        super('ready', {
+            event: "ready",
+            emitter: "client"
         });
-        console.log(client.user.username + ' Ready');
-    });
-};
+    }
+
+    exec() {
+        console.log(`Login ${this.client.user.tag}`);
+    }
+}
