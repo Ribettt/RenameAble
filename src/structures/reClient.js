@@ -1,5 +1,5 @@
 const { AkairoClient, ListenerHandler, CommandHandler } = require('discord-akairo');
-const { join } = require('path');
+const { join } = require("path");
 
 module.exports = class reClient extends AkairoClient {
     constructor(opt) {
@@ -10,18 +10,14 @@ module.exports = class reClient extends AkairoClient {
 
     _init() {
         this.listener = new ListenerHandler(this, {
-            directory: join(__dirname, '..', 'events'),
+            directory: join(__dirname, "..", "events")
         });
         this.cmds = new CommandHandler(this, {
-            directory: join(__dirname, '..', 'commands'),
-            prefix: 'ai!',
+            directory: join(__dirname, "..", "commands"),
+            prefix: "ai!",
             handleEdits: true,
-            ignoreCooldown: this.ownerID,
-            ignorePermissions: this.ownerID,
             commandUtil: true,
-            commandUtilLifetime: 60000,
-            defaultCooldown: 3000,
-            blockBots: true,
+            ignoreCooldown: this.ownerID
         });
 
         this.cmds.useListenerHandler(this.listener);
@@ -30,4 +26,4 @@ module.exports = class reClient extends AkairoClient {
         this.listener.loadAll();
         this.login(process.env.TOKEN);
     }
-}
+};
