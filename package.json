@@ -20,9 +20,11 @@
   },
   "homepage": "https://github.com/Ribettt/RenameAble#readme",
   "dependencies": {
+    "common-tags": "^1.8.0",
     "discord-akairo": "^8.0.0",
     "discord.js": "^12.2.0",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "eslint": "^7.6.0",
